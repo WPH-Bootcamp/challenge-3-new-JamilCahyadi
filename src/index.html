@@ -5,8 +5,1155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3 - Landing Page</title>
     <link href="./output.css" rel="stylesheet" />
+
+    <style>
+      @keyframes marquee {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      .marquee {
+        animation: marquee 20s linear infinite;
+      }
+
+      .marquee:hover {
+        animation-play-state: paused;
+      }
+    </style>
   </head>
-  <body>
+  <body class="bg-black text-[#FDFDFD] box-border p-0 m-0">
     <!-- Mulai coding di sini -->
+    <!-- Header -->
+    <header>
+      <div class="max-w-[1440px] mx-auto">
+        <nav class="px-[140px] h-20 flex items-center justify-between z-40">
+          <div class="flex gap-2 items-center">
+            <img
+              class="w-auto h-8"
+              src="../assets/icons/logo-symbol.png"
+              alt="Logo"
+            />
+            <a class="text-xl font-bold" href="#">
+              <span>Your Logo</span>
+            </a>
+          </div>
+
+          <ul class="flex gap-8">
+            <li><a href="#" class="hover:text-[#FF623E]">About</a></li>
+            <li><a href="#" class="hover:text-[#FF623E]">Service</a></li>
+            <li><a href="#" class="hover:text-[#FF623E]">Projects</a></li>
+            <li><a href="#" class="hover:text-[#FF623E]">Testimonials</a></li>
+            <li><a href="#" class="hover:text-[#FF623E]">FAQ</a></li>
+          </ul>
+
+          <button
+            class="bg-[#FF632E] hover:bg-[#FF623E] text-white font-bold py-2 px-4 rounded-full hover:text-black transition duration-300 ease-in-out"
+          >
+            Let's Talk
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section class="max-w-[1440px] mx-auto px-[140px] py-18">
+        <div class="grid grid-cols-2 items-center gap-10">
+          <!-- Kiri -->
+          <div class="flex flex-col gap-6">
+            <h1 class="text-6xl font-bold leading-tight">
+              Your Tech Partner for Smarter Growth
+            </h1>
+            <p class="text-lg">
+              We Deliver tailored IT solution to help you scale with speed and
+              confidence.
+            </p>
+            <button
+              class="bg-[#FF632E] hover:bg-[#FF623E] text-white font-bold py-2 px-4 rounded-full hover:text-black transition duration-300 ease-in-out"
+            >
+              Let's Talk
+            </button>
+          </div>
+          <!-- kanan -->
+          <div>
+            <img
+              class="z-0 w-[186.75] h-[186.75]"
+              src="../assets/images/Image Hero.png"
+              alt="Image_Hero"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Trusted Brands -->
+      <section class="py-1 overflow-hidden">
+        <div class="max-w-[1440px] mx-auto px-[140px]">
+          <!-- Title -->
+          <p class="text-center mb-10 text-lg">
+            Trusted by Global Innovators & Leading Brands
+          </p>
+
+          <!-- Wrapper -->
+          <div class="relative overflow-hidden">
+            <!-- Fade Left -->
+            <div
+              class="absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-black to-transparent"
+            ></div>
+
+            <!-- Fade Right -->
+            <div
+              class="absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-black to-transparent"
+            ></div>
+
+            <!-- Marquee -->
+            <div class="flex w-max marquee">
+              <!-- Logo Group -->
+              <div class="flex items-center gap-24 px-12 min-w-max">
+                <img
+                  src="https://cdn.simpleicons.org/upwork/ffffff"
+                  alt="Upwork"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/zoom/ffffff"
+                  alt="Zoom"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/postman/ffffff"
+                  alt="Postman"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/databricks/ffffff"
+                  alt="Databricks"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/airbnb/ffffff"
+                  alt="Airbnb"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/dropbox/ffffff"
+                  alt="Dropbox"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/paypal/ffffff"
+                  alt="PayPal"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+              </div>
+
+              <!-- Duplicate -->
+              <div class="flex items-center gap-24 px-12 min-w-max">
+                <img
+                  src="https://cdn.simpleicons.org/upwork/ffffff"
+                  alt="Upwork"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/zoom/ffffff"
+                  alt="Zoom"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/postman/ffffff"
+                  alt="Postman"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/databricks/ffffff"
+                  alt="Databricks"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/airbnb/ffffff"
+                  alt="Airbnb"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/dropbox/ffffff"
+                  alt="Dropbox"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+
+                <img
+                  src="https://cdn.simpleicons.org/paypal/ffffff"
+                  alt="PayPal"
+                  class="h-10 opacity-40 hover:opacity-100 transition duration-300"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- End to End Section-->
+      <section class="w-max-[1440px] mx-auto px-[140px] h-[598px] mt-22">
+        <div class="align-center">
+          <h2 class="text-center text-4xl font-bold">
+            End-to-End IT Solutions That Drive Results
+          </h2>
+          <p class="text-center text-lg text-[#A4A7AE] m-6">
+            From Strategy to execution, we deliver solutions that grow your
+            business
+          </p>
+        </div>
+
+        <!-- Status Grid -->
+        <div class="grid grid-cols-4 gap-6 align-center">
+          <!-- Card -->
+          <div
+            class="aspect-square rounded-full border border-gray-800 bg-[#050B14] flex flex-col items-center justify-center"
+          >
+            <h3 class="text-5xl font-bold text-[#FF632E] mb-4">50+</h3>
+
+            <p class="text-xl text-center">Projects Delivered</p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="aspect-square rounded-full border border-gray-800 bg-[#050B14] flex flex-col items-center justify-center"
+          >
+            <h3 class="text-5xl font-bold text-[#FF632E] mb-4">5+</h3>
+
+            <p class="text-xl text-center">Years of Experience</p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="aspect-square rounded-full border border-gray-800 bg-[#050B14] flex flex-col items-center justify-center"
+          >
+            <h3 class="text-5xl font-bold text-[#FF632E] mb-4">10+</h3>
+
+            <p class="text-xl text-center">Industry Awards Won</p>
+          </div>
+
+          <!-- Card -->
+          <div
+            class="aspect-square rounded-full border border-gray-800 bg-[#050B14] flex flex-col items-center justify-center"
+          >
+            <h3 class="text-5xl font-bold text-[#FF632E] mb-4">100%</h3>
+
+            <p class="text-xl text-center">Client Satisfaction Rate</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR PROCESS SECTION -->
+      <section class="max-w-[1440px] mx-auto px-[140px] py-8">
+        <!-- Heading -->
+        <div class="text-center mb-20">
+          <h2 class="text-5xl font-bold mb-4">Our Process</h2>
+
+          <p class="text-gray-400 text-lg">
+            Clear steps. Smart execution. Results you can count on.
+          </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="relative">
+          <!-- Center Line -->
+          <div
+            class="absolute left-1/2 top-0 -translate-x-1/2 w-[2px] h-full bg-gray-800"
+          ></div>
+
+          <!-- ITEM 1 -->
+          <div class="grid grid-cols-2 gap-16 items-center mb-12">
+            <!-- Left Card -->
+            <div class="bg-[#050B14] border border-gray-800 rounded-2xl p-6">
+              <div class="flex items-start justify-between">
+                <div>
+                  <h3 class="text-2xl font-semibold mb-2">
+                    Discovery & Consultation
+                  </h3>
+
+                  <p class="text-gray-400">Understand Your Needs & Goals</p>
+                </div>
+
+                <span class="text-white text-xl">⌃</span>
+              </div>
+            </div>
+
+            <!-- Right Empty -->
+            <div></div>
+
+            <!-- Number -->
+            <div
+              class="absolute left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-[#FF632E] flex items-center justify-center font-bold"
+            >
+              1
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="grid grid-cols-2 gap-16 items-center mb-12">
+            <div></div>
+
+            <div class="bg-[#050B14] border border-gray-800 rounded-2xl p-6">
+              <div class="flex items-start justify-between">
+                <div>
+                  <h3 class="text-2xl font-semibold mb-2">
+                    Planning & Strategy
+                  </h3>
+
+                  <p class="text-gray-400">Build a Clear, Scalable Roadmap</p>
+                </div>
+
+                <span class="text-white text-xl">⌃</span>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-1/2 top-[170px] -translate-x-1/2 w-14 h-14 rounded-full bg-[#FF632E] flex items-center justify-center font-bold"
+            >
+              2
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="grid grid-cols-2 gap-16 items-center mb-12">
+            <div class="bg-[#050B14] border border-gray-800 rounded-2xl p-6">
+              <div class="flex items-start justify-between">
+                <div>
+                  <h3 class="text-2xl font-semibold mb-2">
+                    Design & Prototyping
+                  </h3>
+
+                  <p class="text-gray-400">Craft UX That Converts</p>
+                </div>
+
+                <span class="text-white text-xl">⌃</span>
+              </div>
+            </div>
+
+            <div></div>
+
+            <div
+              class="absolute left-1/2 top-[340px] -translate-x-1/2 w-14 h-14 rounded-full bg-[#FF632E] flex items-center justify-center font-bold"
+            >
+              3
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="grid grid-cols-2 gap-16 items-center mb-12">
+            <div></div>
+
+            <div class="bg-[#050B14] border border-gray-800 rounded-2xl p-6">
+              <div class="flex items-start justify-between">
+                <div>
+                  <h3 class="text-2xl font-semibold mb-2">
+                    Development & Implementation
+                  </h3>
+
+                  <p class="text-gray-400">Deliver With Speed & Precision</p>
+                </div>
+
+                <span class="text-white text-xl">⌃</span>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-1/2 top-[510px] -translate-x-1/2 w-14 h-14 rounded-full bg-[#FF632E] flex items-center justify-center font-bold"
+            >
+              4
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="grid grid-cols-2 gap-16 items-center mb-12">
+            <div class="bg-[#050B14] border border-gray-800 rounded-2xl p-6">
+              <div class="flex items-start justify-between">
+                <div>
+                  <h3 class="text-2xl font-semibold mb-2">
+                    Testing & Optimization
+                  </h3>
+
+                  <p class="text-gray-400">Ensure Quality at Every Step</p>
+                </div>
+
+                <span class="text-white text-xl">⌃</span>
+              </div>
+            </div>
+
+            <div></div>
+
+            <div
+              class="absolute left-1/2 top-[680px] -translate-x-1/2 w-14 h-14 rounded-full bg-[#FF632E] flex items-center justify-center font-bold"
+            >
+              5
+            </div>
+          </div>
+
+          <!-- ITEM 6 -->
+          <div class="grid grid-cols-2 gap-16 items-center">
+            <div></div>
+
+            <div class="bg-[#050B14] border border-gray-800 rounded-2xl p-6">
+              <div class="flex items-start justify-between">
+                <div>
+                  <h3 class="text-2xl font-semibold mb-2">Launch & Growth</h3>
+
+                  <p class="text-gray-400">
+                    Scale, Measure & Improve Continuously
+                  </p>
+                </div>
+
+                <span class="text-white text-xl">⌃</span>
+              </div>
+            </div>
+
+            <div
+              class="absolute left-1/2 top-[850px] -translate-x-1/2 w-14 h-14 rounded-full bg-[#FF632E] flex items-center justify-center font-bold"
+            >
+              6
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES SECTION -->
+      <section class="max-w-[1440px] mx-auto px-[140px] py-20">
+        <!-- Heading -->
+        <div class="text-center mb-20">
+          <h2 class="text-5xl font-bold mb-4">
+            Smart IT Solutions That Grow With You
+          </h2>
+
+          <p class="text-gray-400 text-lg">
+            Tailored tech to boost efficiency, security, and results.
+          </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-3 gap-6">
+          <!-- CARD -->
+          <div
+            class="bg-[#050B14] border border-gray-800 rounded-2xl p-8 hover:border-[#FF632E] transition duration-300"
+          >
+            <img
+              class="w-[80px] h-[80px]"
+              src="../assets/icons/Website.png"
+              alt="Web Development"
+            />
+
+            <h3 class="text-2xl font-semibold mb-4">Web Development</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Build fast, scalable, and SEO-friendly websites.
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="bg-[#050B14] border border-gray-800 rounded-2xl p-8 hover:border-[#FF632E] transition duration-300"
+          >
+            <img
+              src="../assets/icons/Mobile App Development.png"
+              alt="Mobile App Development"
+            />
+
+            <h3 class="text-2xl font-semibold mb-4">Mobile App Development</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Native & cross-platform apps tailored to user needs.
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="bg-[#050B14] border border-gray-800 rounded-2xl p-8 hover:border-[#FF632E] transition duration-300"
+          >
+            <img src="../assets/icons/UX Design.png" alt="UI/UX Design" />
+
+            <h3 class="text-2xl font-semibold mb-4">UI/UX Design</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Delight users with intuitive and beautiful interfaces.
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="bg-[#050B14] border border-gray-800 rounded-2xl p-8 hover:border-[#FF632E] transition duration-300"
+          >
+            <img src="../assets/icons/Icon (1).png" alt="Cloud Solutions" />
+
+            <h3 class="text-2xl font-semibold mb-4">Cloud Solutions</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Secure and flexible cloud infrastructure for your growth.
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="bg-[#050B14] border border-gray-800 rounded-2xl p-8 hover:border-[#FF632E] transition duration-300"
+          >
+            <img
+              src="../assets/icons/Software Development.png"
+              alt="Software Development"
+            />
+
+            <h3 class="text-2xl font-semibold mb-4">Software Development</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Custom solutions built around your business logic.
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="bg-[#050B14] border border-gray-800 rounded-2xl p-8 hover:border-[#FF632E] transition duration-300"
+          >
+            <img
+              src="../assets/icons/IT Infrastructure.png"
+              alt="IT Infrastructure"
+            />
+
+            <h3 class="text-2xl font-semibold mb-4">IT Infrastructure</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Scale your backend with reliable tech foundations.
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="bg-[#050B14] border border-gray-800 rounded-2xl p-8 hover:border-[#FF632E] transition duration-300"
+          >
+            <img
+              src="../assets/icons/Cybersecurity Services.png"
+              alt="Cybersecurity Services"
+            />
+
+            <h3 class="text-2xl font-semibold mb-4">Cybersecurity Services</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Stay protected with enterprise-grade security.
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="bg-[#050B14] border border-gray-800 rounded-2xl p-8 hover:border-[#FF632E] transition duration-300"
+          >
+            <img src="../assets/icons/QnA.png" alt="QA Solutions" />
+
+            <h3 class="text-2xl font-semibold mb-4">QA Solutions</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Ensure performance with rigorous testing frameworks.
+            </p>
+          </div>
+
+          <!-- CARD -->
+          <div
+            class="bg-[#050B14] border border-gray-800 rounded-2xl p-8 hover:border-[#FF632E] transition duration-300"
+          >
+            <img
+              src="../assets/icons/IT Consulting & Support.png"
+              alt="IT Consulting & Support"
+            />
+
+            <h3 class="text-2xl font-semibold mb-4">IT Consulting & Support</h3>
+
+            <p class="text-gray-400 leading-relaxed">
+              Make smarter tech decisions with expert guidance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- INDUSTRY SECTION -->
+      <section class="max-w-[1440px] mx-auto px-[140px] py-28">
+        <!-- Heading -->
+        <div class="mb-16">
+          <h2 class="text-5xl font-bold mb-4">Built for Your Industry</h2>
+
+          <p class="text-gray-400 text-lg">
+            We've helped companies across industries launch smarter, faster, and
+            more securely.
+          </p>
+        </div>
+
+        <!-- Content -->
+        <div class="grid grid-cols-12 gap-12 items-start">
+          <!-- Left Tabs -->
+          <div class="col-span-3 flex flex-col gap-8">
+            <!-- Active -->
+            <button
+              class="flex items-center gap-4 text-white text-2xl font-semibold"
+            >
+              <span class="w-[4px] h-10 bg-[#FF632E] rounded-full"></span>
+              Fintech
+            </button>
+
+            <!-- Inactive -->
+            <button
+              class="flex items-center gap-4 text-gray-500 text-2xl font-semibold hover:text-white transition"
+            >
+              <span class="w-[4px] h-10 bg-gray-700 rounded-full"></span>
+              E-Commerce
+            </button>
+
+            <!-- Inactive -->
+            <button
+              class="flex items-center gap-4 text-gray-500 text-2xl font-semibold hover:text-white transition"
+            >
+              <span class="w-[4px] h-10 bg-gray-700 rounded-full"></span>
+              Healthcare
+            </button>
+          </div>
+
+          <!-- Right Content -->
+          <div class="col-span-9">
+            <p
+              class="text-xl text-gray-300 leading-relaxed mb-10 max-w-[900px]"
+            >
+              We build secure, scalable, and compliant fintech solutions — from
+              digital wallets to core banking systems — tailored to modern
+              financial needs.
+            </p>
+
+            <!-- Image -->
+            <div class="overflow-hidden rounded-[32px]">
+              <img
+                src="../assets/images/Industry Image Container.png"
+                alt="Fintech"
+                class="w-full h-[420px] object-cover hover:scale-105 transition duration-500"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO SECTION -->
+      <section class="max-w-[1440px] mx-auto px-[140px] py-28">
+        <!-- Heading -->
+        <div class="text-center mb-20">
+          <h2 class="text-5xl font-bold mb-6">
+            From Vision to Launch! Projects We’re Proud Of
+          </h2>
+
+          <p class="text-gray-400 text-lg">
+            Take a closer look at our recent work powering startups,
+            enterprises, and everything in between.
+          </p>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="grid grid-cols-3 gap-8">
+          <!-- CARD 1 -->
+          <div class="group">
+            <!-- Image -->
+            <div class="overflow-hidden rounded-[28px] mb-6 bg-[#050B14]">
+              <img
+                src="../assets/images/Portofolio 1.png"
+                alt="Portfolio 1"
+                class="w-full h-[380px] object-cover group-hover:scale-105 transition duration-500"
+              />
+            </div>
+
+            <!-- Tag -->
+            <span class="text-[#FF632E] text-sm"> Landing Page </span>
+
+            <!-- Title -->
+            <h3 class="text-3xl font-semibold mt-3">Portofolio 1</h3>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="group">
+            <!-- Image -->
+            <div class="overflow-hidden rounded-[28px] mb-6 bg-[#050B14]">
+              <img
+                src="../assets/images/Portofolio 2.png"
+                alt="Portfolio 2"
+                class="w-full h-[380px] object-cover group-hover:scale-105 transition duration-500"
+              />
+            </div>
+
+            <!-- Tag -->
+            <span class="text-[#FF632E] text-sm"> Landing Page </span>
+
+            <!-- Title -->
+            <h3 class="text-3xl font-semibold mt-3">Portofolio 2</h3>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="group">
+            <!-- Image -->
+            <div class="overflow-hidden rounded-[28px] mb-6 bg-[#050B14]">
+              <img
+                src="../assets/images/Portofolio 3.png"
+                alt="Portfolio 3"
+                class="w-full h-[380px] object-cover group-hover:scale-105 transition duration-500"
+              />
+            </div>
+
+            <!-- Tag -->
+            <span class="text-[#FF632E] text-sm"> Landing Page </span>
+
+            <!-- Title -->
+            <h3 class="text-3xl font-semibold mt-3">Portofolio 3</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL SECTION -->
+      <section class="max-w-[1440px] mx-auto px-[140px] py-28 overflow-hidden">
+        <!-- Heading -->
+        <div class="text-center mb-20">
+          <h2 class="text-5xl font-bold mb-6">
+            What Partners Say About Working With Us
+          </h2>
+
+          <p class="text-gray-400 text-lg">
+            Trusted voices. Real experiences. Proven results.
+          </p>
+        </div>
+
+        <!-- Testimonial Cards -->
+        <div class="relative flex items-center justify-center gap-6">
+          <!-- Left Blur Card -->
+          <div
+            class="w-[360px] h-[300px] rounded-[28px] border border-gray-800 bg-[#050B14] opacity-30 p-10"
+          >
+            <div class="text-[#FF632E] text-7xl font-bold mb-6">”</div>
+
+            <div class="flex text-yellow-400 text-xl mb-6">★ ★ ★ ★ ★</div>
+
+            <p class="text-gray-300 leading-relaxed mb-8">
+              “A game-changer for our project. They transformed our idea into
+              reality efficiently and effectively.”
+            </p>
+
+            <div>
+              <h4 class="text-xl font-semibold">John Lee</h4>
+
+              <p class="text-[#FF632E]">Director at Innovate Corp</p>
+            </div>
+          </div>
+
+          <!-- CENTER ACTIVE CARD -->
+          <div
+            class="relative w-[520px] rounded-[28px] border border-[#FF632E] bg-[#050B14] p-12 text-center"
+          >
+            <!-- Quote -->
+            <div
+              class="absolute -top-8 left-10 text-[#FF632E] text-8xl font-bold"
+            >
+              ”
+            </div>
+
+            <!-- Stars -->
+            <div class="flex justify-center text-yellow-400 text-2xl mb-8">
+              ★ ★ ★ ★ ★
+            </div>
+
+            <!-- Text -->
+            <p class="text-2xl leading-relaxed mb-10">
+              “The team delivered exactly what we needed — on time and with
+              outstanding quality. Their attention to detail and communication
+              were top-notch.”
+            </p>
+
+            <!-- Name -->
+            <div>
+              <h4 class="text-2xl font-semibold mb-2">Sarah Tan</h4>
+
+              <p class="text-[#FF632E] text-xl">Product Manager at Finovate</p>
+            </div>
+
+            <!-- Avatar -->
+            <div class="absolute -bottom-10 left-1/2 -translate-x-1/2">
+              <img
+                src="../assets/images/Sarah Tan.png"
+                alt="Sarah Tan"
+                class="w-20 h-20 rounded-full object-cover border-4 border-black"
+              />
+            </div>
+          </div>
+
+          <!-- Right Blur Card -->
+          <div
+            class="w-[360px] h-[300px] rounded-[28px] border border-gray-800 bg-[#050B14] opacity-30 p-10"
+          >
+            <div class="text-[#FF632E] text-7xl font-bold mb-6">”</div>
+
+            <div class="flex text-yellow-400 text-xl mb-6">★ ★ ★ ★ ★</div>
+
+            <p class="text-gray-300 leading-relaxed mb-8">
+              “The collaboration was seamless and exceeded our expectations.
+              Their expertise truly drove successful projects.”
+            </p>
+
+            <div>
+              <h4 class="text-xl font-semibold">Emily Chen</h4>
+
+              <p class="text-[#FF632E]">Marketing Head at TechNova</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="flex justify-center gap-3 mt-20">
+          <span class="w-3 h-3 rounded-full bg-[#FF632E]"></span>
+
+          <span class="w-3 h-3 rounded-full bg-gray-700"></span>
+
+          <span class="w-3 h-3 rounded-full bg-gray-700"></span>
+        </div>
+      </section>
+
+      <!-- FAQ SECTION -->
+      <section class="max-w-[1440px] mx-auto px-[140px] py-28">
+        <!-- Top -->
+        <div class="flex items-start justify-between mb-16">
+          <!-- Left -->
+          <div>
+            <h2 class="text-6xl font-bold leading-tight mb-6">
+              Need Help? Start <br />
+              Here.
+            </h2>
+          </div>
+
+          <!-- Right -->
+          <p class="text-gray-400 text-xl leading-relaxed max-w-[300px]">
+            Everything you need to know — all in one place.
+          </p>
+        </div>
+
+        <!-- Content -->
+        <div class="grid grid-cols-12 gap-12">
+          <!-- FAQ LEFT -->
+          <div class="col-span-8">
+            <!-- FAQ ITEM -->
+            <div class="border-t border-gray-800 py-8">
+              <div class="flex items-center justify-between mb-6">
+                <h3 class="text-3xl font-semibold">
+                  What services do you offer?
+                </h3>
+
+                <span class="text-4xl">−</span>
+              </div>
+
+              <p class="text-gray-400 text-xl leading-relaxed max-w-[800px]">
+                We provide custom web/app development, cloud solutions, UX/UI
+                design, and more.
+              </p>
+            </div>
+
+            <!-- FAQ ITEM -->
+            <div
+              class="border-t border-gray-800 py-8 flex items-center justify-between"
+            >
+              <h3 class="text-3xl font-semibold">
+                How do I know if this is right for my business?
+              </h3>
+
+              <span class="text-4xl">+</span>
+            </div>
+
+            <!-- FAQ ITEM -->
+            <div
+              class="border-t border-gray-800 py-8 flex items-center justify-between"
+            >
+              <h3 class="text-3xl font-semibold">
+                How much does a project cost?
+              </h3>
+
+              <span class="text-4xl">+</span>
+            </div>
+
+            <!-- FAQ ITEM -->
+            <div
+              class="border-t border-gray-800 py-8 flex items-center justify-between"
+            >
+              <h3 class="text-3xl font-semibold">How long does it take?</h3>
+
+              <span class="text-4xl">+</span>
+            </div>
+
+            <!-- FAQ ITEM -->
+            <div
+              class="border-t border-b border-gray-800 py-8 flex items-center justify-between"
+            >
+              <h3 class="text-3xl font-semibold">
+                Can I start with a small project first?
+              </h3>
+
+              <span class="text-4xl">+</span>
+            </div>
+          </div>
+
+          <!-- RIGHT CTA CARD -->
+          <div class="col-span-4">
+            <div class="bg-[#D45531] rounded-[32px] p-8 h-full flex flex-col">
+              <h3 class="text-5xl font-bold leading-tight mb-6">
+                Let’s talk it through
+              </h3>
+
+              <p class="text-xl leading-relaxed mb-8">
+                book a free consultation with our team.
+              </p>
+
+              <!-- Image -->
+              <div class="overflow-hidden rounded-[24px] mb-8">
+                <img
+                  src="../assets/images/Consultation Image.png"
+                  alt="Consultation"
+                  class="w-full h-[220px] object-cover"
+                />
+              </div>
+
+              <!-- Button -->
+              <button
+                class="w-full bg-white text-black font-semibold py-5 rounded-full hover:bg-black hover:text-white transition duration-300"
+              >
+                Free Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="max-w-[1440px] mx-auto px-[140px] py-28">
+        <!-- Heading -->
+        <div class="text-center mb-20">
+          <h2 class="text-6xl font-bold mb-6">Ready to Start? Let’s Talk.</h2>
+
+          <p class="text-gray-400 text-xl">
+            Tell us what you need, and we’ll get back to you soon.
+          </p>
+        </div>
+
+        <!-- Form -->
+        <form class="max-w-[900px] mx-auto">
+          <!-- Name -->
+          <div class="mb-8">
+            <label class="block mb-4 text-lg font-medium"> Name </label>
+
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="w-full bg-transparent border border-gray-800 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#FF632E] transition"
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="mb-8">
+            <label class="block mb-4 text-lg font-medium"> Email </label>
+
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full bg-transparent border border-gray-800 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#FF632E] transition"
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="mb-8">
+            <label class="block mb-4 text-lg font-medium"> Message </label>
+
+            <textarea
+              rows="6"
+              placeholder="Enter your message"
+              class="w-full bg-transparent border border-gray-800 rounded-2xl px-6 py-5 text-white outline-none focus:border-[#FF632E] transition resize-none"
+            ></textarea>
+          </div>
+
+          <!-- Services -->
+          <div class="mb-12">
+            <h3 class="text-lg font-medium mb-6">Services</h3>
+
+            <div class="grid grid-cols-2 gap-y-6">
+              <!-- Checkbox -->
+              <label class="flex items-center gap-4 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked
+                  class="w-6 h-6 accent-[#FF632E]"
+                />
+
+                <span class="text-xl"> Web Development </span>
+              </label>
+
+              <!-- Checkbox -->
+              <label class="flex items-center gap-4 cursor-pointer">
+                <input type="checkbox" class="w-6 h-6 accent-[#FF632E]" />
+
+                <span class="text-xl"> Cloud Solutions </span>
+              </label>
+
+              <!-- Checkbox -->
+              <label class="flex items-center gap-4 cursor-pointer">
+                <input type="checkbox" class="w-6 h-6 accent-[#FF632E]" />
+
+                <span class="text-xl"> Mobile App Development </span>
+              </label>
+
+              <!-- Checkbox -->
+              <label class="flex items-center gap-4 cursor-pointer">
+                <input type="checkbox" class="w-6 h-6 accent-[#FF632E]" />
+
+                <span class="text-xl"> Software Development </span>
+              </label>
+
+              <!-- Checkbox -->
+              <label class="flex items-center gap-4 cursor-pointer">
+                <input type="checkbox" class="w-6 h-6 accent-[#FF632E]" />
+
+                <span class="text-xl"> UI/UX Design </span>
+              </label>
+
+              <!-- Checkbox -->
+              <label class="flex items-center gap-4 cursor-pointer">
+                <input type="checkbox" class="w-6 h-6 accent-[#FF632E]" />
+
+                <span class="text-xl"> Other </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <button
+            type="submit"
+            class="w-full bg-[#FF632E] hover:bg-[#ff774f] text-white text-xl font-semibold py-5 rounded-full transition duration-300"
+          >
+            Send
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="max-w-[1440px] mx-auto px-[140px] pb-20">
+      <!-- Footer Card -->
+      <div class="bg-[#050B14] border border-gray-800 rounded-[40px] p-12">
+        <!-- Top -->
+        <div class="flex items-start justify-between mb-24">
+          <!-- Left -->
+          <h2 class="text-6xl font-bold leading-tight">
+            LET’S DISCUSS <br />
+            YOUR IDEAS
+          </h2>
+
+          <!-- Logo -->
+          <div class="flex items-center gap-4">
+            <img
+              src="../assets/icons/logo-symbol.png"
+              alt="Logo"
+              class="w-10 h-10"
+            />
+
+            <span class="text-3xl font-semibold"> Your Logo </span>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="w-full h-px bg-gray-800 mb-12"></div>
+
+        <!-- Bottom -->
+        <div class="flex items-center justify-between">
+          <!-- Menu -->
+          <ul class="flex gap-10 text-xl">
+            <li>
+              <a href="#" class="hover:text-[#FF632E] transition"> About </a>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-[#FF632E] transition"> Service </a>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-[#FF632E] transition"> Projects </a>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-[#FF632E] transition">
+                Testimonials
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-[#FF632E] transition"> FAQ </a>
+            </li>
+          </ul>
+
+          <!-- Social -->
+          <div class="flex items-center gap-4">
+            <!-- Facebook -->
+            <a
+              href="#"
+              class="w-14 h-14 rounded-full border border-gray-700 flex items-center justify-center hover:border-[#FF632E] transition duration-300"
+            >
+              <img
+                src="../assets/icons/facebook.png"
+                alt="Facebook"
+                class="w-6 h-6 invert opacity-70 hover:opacity-100"
+              />
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="#"
+              class="w-14 h-14 rounded-full border border-gray-700 flex items-center justify-center hover:border-[#FF632E] transition duration-300"
+            >
+              <img
+                src="../assets/icons/instagram.png"
+                alt="Instagram"
+                class="w-6 h-6 invert opacity-70 hover:opacity-100"
+              />
+            </a>
+
+            <!-- LinkedIn -->
+            <a
+              href="#"
+              class="w-14 h-14 rounded-full border border-gray-700 flex items-center justify-center hover:border-[#FF632E] transition duration-300"
+            >
+              <img
+                src="../assets/icons/linkedin.png"
+                alt="LinkedIn"
+                class="w-6 h-6 invert opacity-70 hover:opacity-100"
+              />
+            </a>
+
+            <!-- TikTok -->
+            <a
+              href="#"
+              class="w-14 h-14 rounded-full border border-gray-700 flex items-center justify-center hover:border-[#FF632E] transition duration-300"
+            >
+              <img
+                src="../assets/icons/tiktok.png"
+                alt="TikTok"
+                class="w-6 h-6 invert opacity-70 hover:opacity-100"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
